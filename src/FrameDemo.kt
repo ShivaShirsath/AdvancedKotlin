@@ -7,6 +7,7 @@ import java.awt.event.WindowListener
 
 class FrameDemo internal constructor(name: String) : Frame() {
     init {
+        setTitle(name)
         setSize(200, 100)
         addWindowListener(object : WindowListener {
             override fun windowOpened(windowEvent: WindowEvent) {
